@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ultraviolet Proxy</title>
+</head>
+<body>
+  <script src="uv.client.js"></script>
+  <script>
+    navigator.serviceWorker.register('/uv/uv.sw.js');
+
+    const url = prompt('Enter a URL:');
+    location.href = '/uv/' + __uv.$u(url);
+  </script>
+</body>
+</html>
