@@ -7,7 +7,7 @@
 <body>
   <script src="uv.client.js"></script>
   <script>
-    navigator.serviceWorker.register('/uv/uv.sw.js');
+    navigator.serviceWorker.register('uv.sw.js');
 
     const url = prompt('Enter a URL:');
     location.href = '/uv/' + __uv.$u(url);
