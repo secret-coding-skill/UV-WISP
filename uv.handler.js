@@ -1,4 +1,4 @@
-importScripts('/uv/uv.bundle.js', '/uv/uv.config.js');
+importScripts('uv.bundle.js', 'uv.config.js');
 
 self.__uv.handler = async function (request) {
   const url = new URL(request.url);
