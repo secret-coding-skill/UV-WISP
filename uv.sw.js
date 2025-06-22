@@ -1,4 +1,4 @@
-importScripts('/uv/uv.bundle.js', '/uv/uv.config.js', '/uv/uv.handler.js');
+importScripts('uv.bundle.js', 'uv.config.js', '/uv/uv.handler.js');
 
 self.addEventListener('fetch', event => {
   if (event.request.url.includes(__uv.config.prefix)) {
